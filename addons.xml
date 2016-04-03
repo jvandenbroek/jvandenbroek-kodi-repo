@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="service.autosubs"
+    name="AutoSubs" version="1.0.1" provider-name="jvandenbroek-kodi-repo">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.service" library="default.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Auto Search for Subtitles on Play</summary>
+    <description lang="en">Auto Search for Subtitles on Playback start if no subs are found.[CR][CR]Icon credits goes to zNET Computer Solutions http://www.znetcs.pl</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GPL</license>
+    <website></website>
+    <source>https://github.com/amet/service.autosubs</source>
+    <forum>http://forum.xbmc.org/showthread.php?tid=198973</forum>
+    <email>schumi2004@gmail.com</email>
+  </extension>
+</addon>
+
+<addon id="script.service.afterwatch" name="After Watch" version="0.9.6" provider-name="jvandenbroek-kodi-repo">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.service" library="service.py" start="login" />
+	<extension point="xbmc.python.script" library="script.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Move or delete after watching</summary>
+		<description>After watching a movie or episode:
+- Move or delete
+- Rate on library
+
+The alternate file management method is used to be compatible with SMB and NFS shares. When using only local (mounted) paths,
+it's recommended not to activate this method (moving files will be much faster).
+
+Credits to Pedro Pinto (r.pynto@gmail.com) for the original add-on where most of the code in this version is based on!
+</description>
+		<platform>all</platform>
+		<email>jvandenbroek@gmail.com</email>
+	</extension>
+</addon>
+<addon id="repository.jvandenbroek" name="Jvandenbroek's Kodi Addons" version="0.0.1" provider-name="jvandenbroek">
+	<extension point="xbmc.addon.repository" name="Jvandenbroek's Kodi Addon Repository">
+		<info compressed="false">https://raw.githubusercontent.com/jvandenbroek/jvandenbroek-kodi-repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/jvandenbroek/jvandenbroek-kodi-repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/jvandenbroek/jvandenbroek-kodi-repo</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Jvandenbroek's Addon Repository</summary>
+		<description>Download and install jvandenbroek's addon repository, contains updated After Watch and AutoSubs add-ons!</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>
