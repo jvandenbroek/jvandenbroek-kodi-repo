@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="service.autosubs"
-    name="AutoSubs" version="1.0.1" provider-name="jvandenbroek-kodi-repo">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-  </requires>
-  <extension point="xbmc.service" library="default.py" start="login" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Auto Search for Subtitles on Play</summary>
-    <description lang="en">Auto Search for Subtitles on Playback start if no subs are found.[CR][CR]Icon credits goes to zNET Computer Solutions http://www.znetcs.pl</description>
-    <platform>all</platform>
-    <language>en</language>
-    <license>GPL</license>
-    <website></website>
-    <source>https://github.com/amet/service.autosubs</source>
-    <forum>http://forum.xbmc.org/showthread.php?tid=198973</forum>
-    <email>schumi2004@gmail.com</email>
-  </extension>
-</addon>
-
-<addon id="script.service.afterwatch" name="After Watch" version="0.9.6" provider-name="jvandenbroek-kodi-repo">
+<addon id="script.service.afterwatch" name="After Watch" version="0.9.9" provider-name="jvandenbroek-kodi-repo">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
@@ -40,19 +21,6 @@ Credits to Pedro Pinto (r.pynto@gmail.com) for the original add-on where most of
 </description>
 		<platform>all</platform>
 		<email>jvandenbroek@gmail.com</email>
-	</extension>
-</addon>
-<addon id="repository.jvandenbroek" name="Jvandenbroek's Kodi Addons" version="0.0.1" provider-name="jvandenbroek">
-	<extension point="xbmc.addon.repository" name="Jvandenbroek's Kodi Addon Repository">
-		<info compressed="false">https://raw.githubusercontent.com/jvandenbroek/jvandenbroek-kodi-repo/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/jvandenbroek/jvandenbroek-kodi-repo/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/jvandenbroek/jvandenbroek-kodi-repo</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Jvandenbroek's Addon Repository</summary>
-		<description>Download and install jvandenbroek's addon repository, contains updated After Watch and AutoSubs add-ons!</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
 	</extension>
 </addon>
 </addons>
