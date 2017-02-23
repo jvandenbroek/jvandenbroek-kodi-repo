@@ -13,7 +13,7 @@
   		<platform>all</platform>
   	</extension>
   </addon>
-  <addon id="script.service.afterwatch" name="After Watch" version="0.9.9" provider-name="jvandenbroek-kodi-repo">
+  <addon id="script.service.afterwatch" name="After Watch" version="1.0.0" provider-name="jvandenbroek-kodi-repo">
   	<requires>
   		<import addon="xbmc.python" version="2.1.0"/>
   	</requires>
