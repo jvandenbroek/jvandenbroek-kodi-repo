@@ -1,39 +1,36 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addons>
-  <addon id="repository.jvandenbroek" name="Jvandenbroek's Kodi Addons" version="1.0.0" provider-name="jvandenbroek">
-  	<extension point="xbmc.addon.repository" name="Jvandenbroek's Kodi Addon Repository">
-  		<info compressed="false">https://raw.githubusercontent.com/jvandenbroek/jvandenbroek-kodi-repo/master/addons.xml</info>
-  		<checksum>https://raw.githubusercontent.com/jvandenbroek/jvandenbroek-kodi-repo/master/addons.xml.md5</checksum>
-  		<datadir zip="true">https://github.com/jvandenbroek/jvandenbroek-kodi-repo/raw/master</datadir>
-  	</extension>
-  	<extension point="xbmc.addon.metadata">
-  		<summary>Jvandenbroek's Addon Repository</summary>
-  		<description>Download and install jvandenbroek's addon repository, contains updated After Watch add-on.</description>
-  		<disclaimer></disclaimer>
-  		<platform>all</platform>
-  	</extension>
-  </addon>
-  <addon id="script.service.afterwatch" name="After Watch" version="1.0.0" provider-name="jvandenbroek-kodi-repo">
-  	<requires>
-  		<import addon="xbmc.python" version="2.1.0"/>
-  	</requires>
-  	<extension point="xbmc.service" library="service.py" start="login" />
-  	<extension point="xbmc.python.script" library="script.py">
-  		<provides>executable</provides>
-  	</extension>
-  	<extension point="xbmc.addon.metadata">
-  		<summary>Move or delete after watching</summary>
-  		<description>After watching a movie or episode:
-  - Move or delete
-  - Rate on library
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="repository.jvandenbroek" name="Jvandenbroek's Kodi Addons" provider-name="jvandenbroek" version="1.0.1">
+	<extension name="Jvandenbroek's Kodi Addon Repository" point="xbmc.addon.repository">
+		<info compressed="false">https://raw.githubusercontent.com/jvandenbroek/jvandenbroek-kodi-repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/jvandenbroek/jvandenbroek-kodi-repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/jvandenbroek/jvandenbroek-kodi-repo/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Jvandenbroek's Addon Repository</summary>
+		<description>Download and install jvandenbroek's addon repository, contains updated After Watch add-on.</description>
+		<disclaimer />
+		<platform>all</platform>
+	</extension>
+</addon><addon id="script.service.afterwatch" name="After Watch" provider-name="jvandenbroek" version="1.0.1">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension library="script.py" point="xbmc.python.script">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Move or delete after watching</summary>
+		<description>After watching a movie or episode:
+- Move or delete
+- Rate on library
 
-  The alternate file management method is used to be compatible with SMB and NFS shares. When using only local (mounted) paths,
-  it's recommended not to activate this method (moving files will be much faster).
+The alternate file management method is used to be compatible with SMB and NFS shares. When using only local (mounted) paths,
+it's recommended not to activate this method (moving files will be much faster).
 
-  Credits to Pedro Pinto (r.pynto@gmail.com) for the original add-on where most of the code in this version is based on!
-  </description>
-  		<platform>all</platform>
-  		<email>jvandenbroek@gmail.com</email>
-  	</extension>
-  </addon>
-</addons>
+Credits to Pedro Pinto (r.pynto@gmail.com) for the original add-on where most of the code in this version is based on!
+</description>
+		<platform>all</platform>
+		<email>jvandenbroek@gmail.com</email>
+	</extension>
+</addon></addons>
