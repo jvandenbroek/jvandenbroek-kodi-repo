@@ -1,3 +1,10 @@
+1.0.2 (2019-02-05):
+* Implemented debug class providing better in-depth debugging
+* Catch division error or other exceptions on playback stop (noticed on Leia)
+* Turn off display on Linux supported when CEC available and cec-client installed
+* Optional option to auto close confirmation dialogs after set period
+* Other small fixes
+
 1.0.1 (2018-11-01):
 * Follow symlink when deleting files
 
